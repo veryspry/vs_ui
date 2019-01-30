@@ -1,4 +1,5 @@
-import Test from "./test";
 import Auth from "./auth";
+import Home from "./home";
+import BlogList from "./blog/list";
 
-export { Test, Auth };
+export { Auth, Home, BlogList };
