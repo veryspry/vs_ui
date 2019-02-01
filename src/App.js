@@ -1,12 +1,12 @@
-import React, { Fragment, Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
 import AWSAppSyncClient, { AUTH_TYPE } from "aws-appsync";
 import { Rehydrated } from "aws-appsync-react";
 import { ApolloProvider } from "react-apollo";
 import { ThemeProvider } from "styled-components";
 
-import { Header, Flex } from "./components";
 import { Home, Auth, BlogList } from "./views";
+import DefaultRoute from "./default-route";
 
 import GlobalStyles from "./styles/global";
 
@@ -30,11 +30,11 @@ class App extends Component {
           <GlobalStyles />
           <ThemeProvider theme={theme}>
             <BrowserRouter>
-              <Fragment>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/blog" component={BlogList} />
-                <Route exact path="/auth" component={Auth} />
-              </Fragment>
+              <div>
+                <DefaultRoute exact path="/" component={Home} />
+                <DefaultRoute exact path="/blog" component={BlogList} />
+                <DefaultRoute exact path="/auth" component={Auth} />
+              </div>
             </BrowserRouter>
           </ThemeProvider>
         </Rehydrated>
