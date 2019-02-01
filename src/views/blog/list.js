@@ -52,7 +52,6 @@ const BlogList = props => {
         const {
           listSummaries: { items }
         } = data;
-        return <Loading />;
         return (
           <Flex justifyContent="spaceBetween" alignItems="center" py="60px">
             <Flex
