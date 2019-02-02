@@ -61,7 +61,7 @@ const BlogList = props => {
             >
               <Box mb="26px">
                 <BodyHome fontSize={["2rem", "2.5rem", "2.5rem"]}>
-                  Below you'll find a record of what I've been working on
+                  Below you'll find a record of what I've been working on,
                   thinking about, coffee I've been drinking and music I've been
                   listening to.
                 </BodyHome>
