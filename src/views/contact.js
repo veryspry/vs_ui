@@ -68,12 +68,19 @@ class ContactForm extends Component {
   _handleSubmit = event => {
     event.preventDefault();
     axios
-      .post(`${process.env.REACT_APP_API_URL}/contact-form`, this.state)
-      .then(res => this.setState({ ...this.defaultFormState }))
-      .catch(err => console.log(err));
+      // .post(`${process.env.REACT_APP_API_URL}/contact-form`, this.state)
+      .post(`https://veryspry.com/contact-form`, this.state)
+      .then(res => {
+        console.log("RES", res);
+        this.setState({ ...this.defaultFormState });
+      })
+      .catch(err => {
+        console.log("ERROR", err);
+      });
   };
 
   render() {
+    console.log(process.env.REACT_APP_API_URL);
     return (
       <Flex flexDirection="column" alignItems="center" my="70px">
         <Form width={["95vw", "80vw", "600px"]}>
