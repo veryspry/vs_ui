@@ -68,8 +68,7 @@ class ContactForm extends Component {
   _handleSubmit = event => {
     event.preventDefault();
     axios
-      // .post(`${process.env.REACT_APP_API_URL}/contact-form`, this.state)
-      .post(`https://veryspry.com/contact-form`, this.state)
+      .post(`/contact-form`, this.state)
       .then(res => {
         console.log("RES", res);
         this.setState({ ...this.defaultFormState });
