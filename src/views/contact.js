@@ -70,8 +70,13 @@ class ContactForm extends Component {
     axios
       // .post(`${process.env.REACT_APP_API_URL}/contact-form`, this.state)
       .post(`https://veryspry.com/contact-form`, this.state)
-      .then(res => this.setState({ ...this.defaultFormState }))
-      .catch(err => console.log(err));
+      .then(res => {
+        console.log("RES", res);
+        this.setState({ ...this.defaultFormState });
+      })
+      .catch(err => {
+        console.log("ERROR", err);
+      });
   };
 
   render() {
