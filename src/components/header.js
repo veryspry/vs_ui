@@ -23,10 +23,6 @@ const Header = props => {
     {
       title: "Blog",
       to: "/blog"
-    },
-    {
-      title: "Contact",
-      to: "/contact"
     }
   ];
   const socialIcons = [

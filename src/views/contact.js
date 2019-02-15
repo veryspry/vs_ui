@@ -50,26 +50,26 @@ const InputWrap = styled(Flex)`
 `;
 
 class ContactForm extends Component {
-  state = {
+  defaultFormState = {
     name: "",
     email: "",
     message: ""
   };
 
+  state = {
+    ...this.defaultFormState
+  };
+
   _handleChange = event => {
     const { name, value } = event.target;
-    console.log(name, value);
     this.setState({ [name]: value });
-    console.log(this.state);
   };
 
   _handleSubmit = event => {
     event.preventDefault();
-    console.log(process.env.REACT_APP_API_URL);
-
     axios
       .post("/contact-form", this.state)
-      .then(res => console.log("RES", res))
+      .then(res => this.setState({ ...this.defaultFormState }))
       .catch(err => console.log(err));
   };
 
