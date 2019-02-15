@@ -68,7 +68,7 @@ class ContactForm extends Component {
   _handleSubmit = event => {
     event.preventDefault();
     axios
-      .post("/contact-form", this.state)
+      .post(`${process.env.REACT_APP_API_URL}/contact-form`, this.state)
       .then(res => this.setState({ ...this.defaultFormState }))
       .catch(err => console.log(err));
   };
