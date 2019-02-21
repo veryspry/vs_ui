@@ -19,4 +19,4 @@ Note that the server for this expects this project to sit in a directory named `
 
 1. Clone the repo (see note on cloning above)
 2. `cd` into the project
-3. Run `yarn build` or `npm run build`
+3. Build production bundle with `yarn build` or `npm run build`
