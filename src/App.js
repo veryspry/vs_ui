@@ -5,7 +5,7 @@ import { Rehydrated } from "aws-appsync-react";
 import { ApolloProvider } from "react-apollo";
 import { ThemeProvider } from "styled-components";
 
-import { Home, Auth, BlogList } from "./views";
+import { Home, Auth, BlogList, ContactForm } from "./views";
 import DefaultRoute from "./default-route";
 
 import GlobalStyles from "./styles/global";
@@ -34,6 +34,7 @@ class App extends Component {
                 <DefaultRoute exact path="/" component={Home} />
                 <DefaultRoute exact path="/blog" component={BlogList} />
                 <DefaultRoute exact path="/auth" component={Auth} />
+                <DefaultRoute exact path="/contact" component={ContactForm} />
               </div>
             </BrowserRouter>
           </ThemeProvider>
