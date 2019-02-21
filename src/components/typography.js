@@ -58,7 +58,7 @@ export const StyledLink = styled(Link)`
   &:hover {
     text-decoration: ${({ textDecoration }) =>
       textDecoration ? textDecoration : "underline"};
-    color: ${({ hoverColor }) => (hoverColor ? hoverColor : "black")};
+    color: ${({ hovercolor }) => (hovercolor ? hovercolor : "black")};
   }
 `;
 

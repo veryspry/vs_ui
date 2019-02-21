@@ -117,7 +117,7 @@ const BlogList = props => {
                           created
                         }) => {
                           return (
-                            <Flex mb="20px">
+                            <Flex mb="20px" key={coffeeID}>
                               <TimelineText
                                 key={coffeeID}
                                 fontSize={["1rem", "1.2rem", "1.2rem"]}

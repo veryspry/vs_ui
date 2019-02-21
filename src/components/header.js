@@ -62,7 +62,7 @@ const Header = props => {
                   to={to}
                   fontWeight="100"
                   color="black"
-                  hoverColor="#2096c7"
+                  hovercolor="#2096c7"
                   textDecoration="underline"
                 >
                   <HeaderText>{title}</HeaderText>
