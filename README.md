@@ -5,7 +5,7 @@ Find the server [here](https://github.com/veryspry/vs_server)
 
 https://veryspry.com
 
-***A note on Cloning / running this project*** \n
+***A note on Cloning / running this project*** \
 Note that the server for this expects this project to sit in a directory named `ui` next to this on the same level. As such, I recommend creating a directory called `vs` with subdirectories `server` and `ui` and cloning this into the `ui` directory.
 
 ### Run in dev mode:
