@@ -1,6 +1,6 @@
 import Auth from "./auth";
 import Home from "./home";
-import BlogList from "./blog/list";
+import Projects from "./projects";
 import ContactForm from "./contact";
 
-export { Auth, Home, BlogList, ContactForm };
+export { Auth, Home, Projects, ContactForm };
