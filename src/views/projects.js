@@ -106,6 +106,7 @@ const Projects = props => {
                       <TimelineText fontSize={["1rem", "1.2rem", "1.2rem"]}>
                         {description}:{" "}
                         <StyledAnchor
+                          color="link"
                           target="_blank"
                           rel="noopener noreferrer"
                           href={url}
