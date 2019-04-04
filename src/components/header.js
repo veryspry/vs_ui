@@ -21,8 +21,8 @@ const Header = props => {
       to: ""
     },
     {
-      title: "Blog",
-      to: "/blog"
+      title: "Projects",
+      to: "/projects"
     }
   ];
   const socialIcons = [

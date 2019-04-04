@@ -17,15 +17,13 @@ module.exports = () => {
       path: path.join(__dirname, "dist")
     },
     devServer: {
-      // publicPath determines where bundles are served from and takes precedenct over contentBase
-      //   publicPath: path.join(),
-      // ContentBase determines where to serve static files
       contentBase: path.join(__dirname, "public"),
       compress: true,
       port: 9000,
       hot: true,
       open: false,
-      overlay: true
+      overlay: true,
+      historyApiFallback: true
     },
     module: {
       rules: [
